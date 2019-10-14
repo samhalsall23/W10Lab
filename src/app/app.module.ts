@@ -23,8 +23,8 @@ const appRoutes: Routes = [
   { path: "deletemovie", component: DeletemovieComponent },
   { path: "listmovies", component: ListmoviesComponent },
   { path: "addactormovie", component: AddactormovieComponent },
-  {path:"**", component:PagenotfoundComponent},  //** means wildcard ,   WHAT NEEDED FOR TASK 5
   { path: "", redirectTo: "/listactors", pathMatch: "full" },
+  {path:"**", component:PagenotfoundComponent},  //** means wildcard ,   must be at the bottom
 ];
 @NgModule({
   declarations: [
